@@ -1,93 +1,68 @@
-# [HTML5 Boilerplate](https://html5boilerplate.com)
+##brb (name subject to change)
 
-[![Build Status](https://travis-ci.org/h5bp/html5-boilerplate.svg)](https://travis-ci.org/h5bp/html5-boilerplate)
-[![devDependency Status](https://david-dm.org/h5bp/html5-boilerplate/dev-status.svg)](https://david-dm.org/h5bp/html5-boilerplate#info=devDependencies)
+Web application displaying a full­page notice of where you've r­-u-­n-­o-­f-­t
+to.
 
-HTML5 Boilerplate is a professional front-end template for building
-fast, robust, and adaptable web apps or sites.
+##table of contents:
+	* description
+	* features
+	* views
+	* style & experience * motion graphics
+	* r1
+	* r2
+	* unsolved issues
 
-This project is the product of many years of iterative development and
-combined community knowledge. It does not impose a specific development
-philosophy or framework, so you're free to architect your code in the
-way that you want.
+##description:
+Brb is a web application that provides a quick solution to notifying others where you are when you leave your workspace. This is accomplished through the display of a full screen notice comprised of an aesthetically pleasing motion graphic and a single line of editable text. These notices are labeled as tags, and can be quickly accessed through a keyword preceded by a slash at the end of brb's url (i.e. brb.me/coffee) or from a selection of popular tags on the websites main screen. These tags are meant to be purposefully general ranging from "lunch" and "phone call" to a default "be right back". While primarily imagined for an open workplace environment, brb has further uses in school or casual public places.
 
-* Homepage: [https://html5boilerplate.com](https://html5boilerplate.com)
-* Source: [https://github.com/h5bp/html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
-* Twitter: [@h5bp](https://twitter.com/h5bp)
+##features:
+	Core features
+		* fast access of tags through a short and smart URL
+		* selection of available tags sorted by popularity from index * editable text on notice screen with tag specific defaults
+	Additional features
+	   	* Bespoke motion graphics for individual tags
+     	* Editable ETA on notice screen
+	 	* Smart index screen showing most used tags first 
+	 	* changeable motion graphics on notice screen
+		* locally cached custom tag creation
+		 
+##views:
 
+Brb mainly consists of two views.The first being the index page. Here the user can find a 2x3 grid of available tags, finding additional tags below the fold. Selection of one tag on the index will dynamically generate the second screen; the notice screen or tag screen. This screen is the showcase for brb's main feature, displaying the full page notice with included cutesy motion graphic.
 
-## Quick start
+##style:
 
-Choose one of the following options:
-
-1. Download the latest stable release from
-   [html5boilerplate.com](https://html5boilerplate.com/) or create a
-   custom build using [Initializr](http://www.initializr.com).
-2. Clone the git repo — `git clone
-   https://github.com/h5bp/html5-boilerplate.git` - and checkout the
-   [tagged release](https://github.com/h5bp/html5-boilerplate/releases)
-   you'd like to use.
-
-
-## Features
-
-* HTML5 ready. Use the new elements with confidence.
-* Designed with progressive enhancement in mind.
-* Includes:
-  * [`Normalize.css`](https://necolas.github.com/normalize.css/)
-    for CSS normalizations and common bug fixes
-  * [`jQuery`](https://jquery.com/) via CDN, with a local fallback
-  * A custom build of  [`Modernizr`](http://modernizr.com/) for feature
-    detection
-  * [`Apache Server Configs`](https://github.com/h5bp/server-configs-apache)
-    that, among other, improve the web site's performance and security
-* Placeholder CSS Media Queries.
-* Useful CSS helper classes.
-* Default print styles, performance optimized.
-* An optimized version of the Google Universal Analytics snippet.
-* Protection against any stray `console` statements causing JavaScript
-  errors in older browsers.
-* "Delete-key friendly." Easy to strip out parts you don't need.
-* Extensive inline and accompanying documentation.
+I think of brb as a personal tool, it's not professional, it's not flashy. And well, neither are coffee runs and bathroom breaks. It should be playful, uncomplicated, with near invisible design. For the initial user, they should enjoying seeing it, but be able to hop quickly to their end screen. The second user, the one seeing the tag screen, only interacts with the visuals, hopefully cracking a smirk at the sight of a dancing coffee cup
 
 
-## Browser support
+##motion graphics:
 
-* Chrome *(latest 2)*
-* Edge *(latest 2)*
-* Firefox *(latest 2)*
-* Internet Explorer 8+
-* Opera *(latest 2)*
-* Safari *(latest 2)*
+SOURCES:
+sleep: https://dribbble.com/shots/2184508-Sleepy-Pillow
+lunch: https://dribbble.com/shots/1036482-Bon-App-tit-GIF
+coffee: https://dribbble.com/shots/1702943-My-Desk
+bathroom: https://dribbble.com/shots/2078399--cause-it-s-potty-time
+meeting: https://dribbble.com/shots/2082808-Duckprove-Reports
+brb: https://dribbble.com/shots/1559273-Its-never-too-late
 
-*This doesn't mean that HTML5 Boilerplate cannot be used in older browsers,
-just that we'll ensure compatibility with the ones mentioned above.*
+To me, this is where the majority of brb's personality will stem from, the motion graphics playfully reporting where "it's user" ran off to. It's important that brb's design has a cultivated branding, it makes for a more memorable experience. Bespoke graphics with a similar style achieve this. I'll refer back to Dropbox's awesome brand materials (http://byalicelee.com/ is amazing)
+quick notes on what I see as guidelines for gifs:
+	* short, 3­5 seconds long
+	* loop smoothly, no jarring repeats
+	* accompanied with specific text and background color
 
-If you need legacy browser support (IE 6+, Firefox 3.6+, Safari 4+) you
-can use [HTML5 Boilerplate v4](https://github.com/h5bp/html5-boilerplate/tree/v4),
-but is no longer actively developed.
+##release one:
 
+The first release of brb will be for Creative Industry Day, and will showcase core functionality, defined styled, and details into future development. There will be six defined tags, with URLs, color schemes, and default taglines.
+Motion graphics will be sourced from online artists (credits given in notice screen) and will be conducive to the style and aesthetic of the site. Additional visuals like text and background color will have to be determined for each graphic.
 
-## Documentation
+##release two:
 
-Take a look at the [documentation table of contents](dist/doc/TOC.md).
-This documentation is bundled with the project, which makes it readily
-available for offline reading and provides a useful starting point for
-any documentation you want to write about your project.
+The second release comes with a more flexible deadline, and will include all features listed, and bespoke graphics for each tag. Analytics will be built in to track popular tags. Users will be able to further customize tags. The index page will feature a portal for new tag and motion graphic submissions. Back­end will be implemented for quick new tag adding.
 
+##unsolved issues:
 
-## Contributing
+Keeping the display from falling asleep. Aside from looping a damn flash video in the background.
 
-Hundreds of developers have helped make the HTML5 Boilerplate what it is
-today. Anyone and everyone is welcome to [contribute](CONTRIBUTING.md),
-however, if you decide to get involved, please take a moment to review
-the [guidelines](CONTRIBUTING.md):
+This work is licensed under a Creative Commons Attribution­NonCommercial­ NoDerivatives 4.0 International License.
 
-* [Bug reports](CONTRIBUTING.md#bugs)
-* [Feature requests](CONTRIBUTING.md#features)
-* [Pull requests](CONTRIBUTING.md#pull-requests)
-
-
-## License
-
-The code is available under the [MIT license](LICENSE.txt).
