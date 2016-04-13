@@ -1,0 +1,9 @@
+{
+    "coffee": {
+        "text": "Be right back! Caffeine replenishment in progress",
+        "img": "../img/cupanimation.gif",
+        "bg":"#FFFFF",
+        "textcolor": "#1E1E1E"
+    }
+
+}
