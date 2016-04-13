@@ -54,7 +54,10 @@ function tagMake(tagname) {
 
     //Create Elements
     var tag = document.createElement('div');
-    tag.className = "tagScreen";
+    tag.id = "tagScreen";
+
+    var time = document.createElement('h3');
+    time.id = "time";
 
     var tagImg = document.createElement('img');
     tagImg.className = "tagImg";
@@ -65,6 +68,11 @@ function tagMake(tagname) {
     //Append child elements
     tag.appendChild(tagImg);
     tag.appendChild(tagText);
+    tag.appendChild(time);
+
+    //updateClock();
+
+
 
     //Create unique tag vars
     var text = window.tags[tagname].text;
@@ -88,8 +96,8 @@ function tagMake(tagname) {
 
     //Style Page elements
     document.body.style.background = bg;
-    document.getElementById("time").style.color = textcolor;
     document.getElementById("logo").style.color = textcolor;
+    document.getElementById("back").setAttributeNS(null,"fill",textcolor);
     //STYLE SVG COLOR
 
 
@@ -101,9 +109,14 @@ function tagMake(tagname) {
 
     tagText.innerHTML = text;
     tagText.style.color = textcolor;
-    tagText.style.fontSize = "1.6em";
+    tagText.style.fontSize = "2.5em";
+    tagText.style.textAlign = "center";
+
 
     document.getElementById('wrapper').appendChild(tag);
+    updateClock();
+    document.getElementById("time").style.color = textcolor;
+    t = setInterval(updateClock,1000);
 
 }
 
@@ -116,8 +129,10 @@ function transitionGrid(tagname){
 
     $(footer).fadeOut();
     $(back).fadeIn();
-    $(time).fadeIn();
+    //SVG styling
+    back.style.display ="";
     $(grid).fadeOut(function(){tagMake(tagname)});
+    console.log("transitionGrid");
 
 }
 
@@ -125,7 +140,6 @@ function transitionTag(){
 
     var back = document.getElementById("back");
     var grid  = document.getElementById("grid");
-    var time  = document.getElementById("time");
     var footer  = document.getElementById("footer");
 
 
@@ -134,15 +148,19 @@ function transitionTag(){
     time.style.color = "black";
     document.getElementById("logo").style.color = "black";
 
+    console.log("next fade");
+
     $(footer).fadeIn();
-    $(time).fadeOut();
     $(back).fadeOut();
-    $(grid).fadeIn(function(){});
+    $(grid).fadeIn();
 }
 
 function killTag(){
 
-    $(".tagScreen").fadeOut(function(){transitionTag()})
+    console.log("kill");
+    clearInterval(t);
+    $("#tagScreen").fadeOut(1000,function(){transitionTag();$("#tagScreen").remove();$("#time").fadeOut();})
+
 }
 
 function updateClock() {
@@ -169,4 +187,3 @@ function updateClock() {
     // Update the time display
     document.getElementById("time").innerHTML = currentTimeString;
 }
-updateClock();
