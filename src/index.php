@@ -28,6 +28,8 @@
     <script src="js/main.js"></script>
 
     <script>
+
+    //see if which is there
     $(document).ready(function(){
         var which="<?php echo $_GET['arg']; ?>";
 
