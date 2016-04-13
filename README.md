@@ -1,4 +1,5 @@
 ##brb
+
 Web application displaying a full­page notice of where you've r­-u-­n-­o-­f-­t
 to.
 
@@ -7,15 +8,13 @@ to.
 Brb is a web application that provides a quick solution to notifying others where you are when you leave your workspace. This is accomplished through the display of a full screen notice comprised of an aesthetically pleasing motion graphic and a single line of editable text. These notices are labeled as tags, and can be quickly accessed through a keyword preceded by a slash at the end of brb's url (i.e. brb.me/coffee) or from a selection of popular tags on the websites main screen. These tags are meant to be purposefully general ranging from "lunch" and "phone call" to a default "be right back". While primarily imagined for an open workplace environment, brb has further uses in school or casual public places.
 
 ##Features
-	##Core features
-		* fast access of tags through a short and smart URL
-		* selection of available tags sorted by popularity from index * editable text on notice screen with tag specific defaults
-	##Additional features
-	   	* Bespoke motion graphics for individual tags
-     	* Editable ETA on notice screen
-	 	* Smart index screen showing most used tags first 
-	 	* changeable motion graphics on notice screen
-		* locally cached custom tag creation
+* fast access of tags through a short and smart URL
+* selection of available tags sorted by popularity from index * editable text on notice screen with tag specific defaults
+* Bespoke motion graphics for individual tags
+* Editable text on notice screen
+* Smart index screen showing most used tags first 
+* changeable motion graphics on notice screen
+* locally cached custom tag creation
 		 
 ##Views
 
@@ -28,19 +27,7 @@ I think of brb as a personal tool, it's not professional, it's not flashy. And w
 
 ##Motion Graphics
 
-SOURCES
-sleep: https://dribbble.com/shots/2184508-Sleepy-Pillow
-lunch: https://dribbble.com/shots/1036482-Bon-App-tit-GIF
-coffee: https://dribbble.com/shots/1702943-My-Desk
-bathroom: https://dribbble.com/shots/2078399--cause-it-s-potty-time
-meeting: https://dribbble.com/shots/2082808-Duckprove-Reports
-brb: https://dribbble.com/shots/1559273-Its-never-too-late
-
-To me, this is where the majority of brb's personality will stem from, the motion graphics playfully reporting where "it's user" ran off to. It's important that brb's design has a cultivated branding, it makes for a more memorable experience. Bespoke graphics with a similar style achieve this. I'll refer back to Dropbox's awesome brand materials (http://byalicelee.com/ is amazing)
-quick notes on what I see as guidelines for gifs:
-	* short, 3­5 seconds long
-	* loop smoothly, no jarring repeats
-	* accompanied with specific text and background color
+To me, this is where the majority of brb's personality will stem from, the motion graphics playfully reporting where "it's user" ran off to. It's important that brb's design has a cultivated branding, it makes for a more memorable experience. Bespoke graphics with a similar style achieve this.
 
 ##Release One
 
@@ -56,4 +43,3 @@ The second release comes with a more flexible deadline, and will include all fea
 Keeping the display from falling asleep. Aside from looping a damn flash video in the background.
 
 This work is licensed under a Creative Commons Attribution­NonCommercial­ NoDerivatives 4.0 International License.
-
