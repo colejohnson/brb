@@ -1,5 +1,4 @@
-##brb (name subject to change)
-
+##brb
 Web application displaying a full­page notice of where you've r­-u-­n-­o-­f-­t
 to.
 
