@@ -56,14 +56,14 @@
         <path style="display: none" transform="scale(2)" id="back" d="M11.3,21c-4.2-2.8-8-7.2-8.1-7.4C3.1,13.5,3,13.2,3,13c0-0.2,0.1-0.5,0.2-0.7c0.1-0.2,4-4.6,8.1-7.4  c0.3-0.2,0.7-0.2,1.1-0.1C12.8,5.1,13,5.4,13,5.8v3.7c0,0,8.7,0.5,9.1,0.8c0.6,0.4,0.9,1.7,0.9,2.7c0,1.1-0.4,2.2-0.9,2.6  c-0.4,0.3-9.1,0.9-9.1,0.9v3.7c0,0.4-0.2,0.7-0.6,0.9C12.1,21.3,11.7,21.2,11.3,21z" fill="#6f6f6f"/>
     </svg>
 
-    <a href="index.html"><h1 id="logo"><strong><em>brb</em></strong></h1></a>
+    <a href="index.php"><h1 id="logo"><strong><em>brb</em></strong></h1></a>
 
 
     <div class="grid" id="grid">
         <div class="grid__row">
             <a><div class="grid__item" style="background-color: #2DA4A8" onclick="transitionGrid('coffee')"><img class="gridImg" src="img/cupanimation.gif"></div><p class="gridText">/coffee</p></a>
             <a><div class="grid__item" style="background-color: #FFFFFF" onclick="transitionGrid('meeting')"><img class="gridImg" src="img/meeting.gif"></div><p class="gridText">/meeting</p></a>
-            <a><div class="grid__item" style="background-color: #7A3751" onclick="transitionGrid('sleep')"><img class="gridImg" src="img/pillow.gif"></div><p class="gridText">/sleep</p></a>
+            <a><div class="grid__item" style="background-color: #2686EC" onclick="transitionGrid('pizza')"><img class="gridImg" src="img/pizza.gif"></div><p class="gridText">/pizza</p></a>
         </div>
         <div class="grid__row">
             <a><div class="grid__item" style="background-color: #FFFFFF" onclick="transitionGrid('bathroom')"><img class="gridImg" src="img/bathroom.gif"></div><p class="gridText">/bathroom</p></a>
@@ -77,6 +77,11 @@
 </div>
 
 <div id="footer"><p>More tags coming soon!</p></div>
+
+<div id="blank"></div>
+
+
+<div id="footerlinks"> <span><a href="about.html">About&#8195;</a></span><span><a href="contact.html">Contact</a></span></div>
 
 
 

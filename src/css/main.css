@@ -8,6 +8,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url(https://fonts.googleapis.com/css?family=Cabin:400,700italic);
+
 html {
     color: #222;
     font-size: 1em;
@@ -15,8 +17,10 @@ html {
     font-family: 'Cabin',sans-serif;
 }
 
-a{
+span,a{
     text-decoration: none;
+    color: black;
+
 
 }
 a:visited{
@@ -171,6 +175,27 @@ textarea {
     font-size: 1em;
 }
 
+#sourceText{
+    text-align: center;
+    bottom: 0em;
+    width: auto;
+    font-size: 1em;
+}
+
+#blank{
+    text-align: center;
+    bottom: 0em;
+    width: auto;
+}
+
+#footerlinks{
+    display: inline;
+    padding-left: 4em;
+    bottom: 0em;
+    width: auto;
+    font-size: 1.3em;
+}
+
 #tagScreen {
     display: none;
     display: -webkit-flex;
@@ -182,18 +207,16 @@ textarea {
     justify-content: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+#aboutText {
+    display: -webkit-flex;
+    flex-direction: column;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    width: 40em;
+}
 
 
 /* ==========================================================================
